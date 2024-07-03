@@ -1,6 +1,4 @@
-### 15.10.2023
- 
-import csv
+ import csv
 
 print(1)
 x=list (csv.reader(open("car_dealership.txt")))
