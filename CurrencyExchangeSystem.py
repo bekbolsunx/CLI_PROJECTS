@@ -1,14 +1,11 @@
 from time import time, sleep, strftime
 from datetime import datetime
 
-# Дает промежутки между выполнением для удобства пользователя 
+# Дает промежутки между выполнением, для удобства пользователя.
 def my_sleep():
     seconds = randint(0, 5)
     print('Sleeping for ', seconds, 'seconds')
     sleep(seconds)
-
-
-
 
 
 
@@ -95,12 +92,6 @@ class Obmenka:
 
 
 
-
-
-
-
-
-
 obmenka = Obmenka('BEKrichman')
 obmenka.add_valuta('dollar')
 obmenka.buy('dollar', 100, 89.5)
@@ -140,13 +131,10 @@ obmenka.show_history()
 
 
 
+from datetime import datetime 
 
+now  = datetime.now()
 
+formatted_date = now.strftime('%Y - %m - %d' "and" '%H : %M : %S')
 
-# from datetime import datetime 
-
-# now  = datetime.now()
-
-# formatted_date = now.strftime('%Y - %m - %d' "and" '%H : %M : %S')
-
-# print(formatted_date)
+print(formatted_date)
